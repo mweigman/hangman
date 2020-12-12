@@ -1,0 +1,237 @@
+header, main, footer {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkslategrey;
+    color: darksalmon;
+}
+
+header {
+    background-color: darkslategrey;
+    color: #FFFFFF;
+    height: 120px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 3em;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 3em;
+    letter-spacing: 0.25em;
+    text-align: center;
+}
+
+h2 {
+    color: salmon;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 1px 1px 1px orange;
+    text-align: center;
+}
+
+#icon {
+    height: 100px;
+    display: block;
+    margin: -10px auto;
+}
+
+img{
+    display: block;
+    margin: 20px auto;
+}
+
+.used {
+    border: #6B7A8F;
+    background: #6B7A8F;
+}
+
+.imageNumber {
+    text-align: left;
+}
+
+button {
+    color: #000000;
+    border: 1px solid saddlebrown;
+    background: salmon;
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+button:hover {
+    border: #6B7A8F;
+    background: #6B7A8F;
+    cursor: pointer;
+    color: #EFEFEF;
+    text-transform: uppercase;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline:0;
+}
+
+.play-again {
+    margin-top: 20px;
+    width: 190px;
+    height: 45px;
+    background: salmon;
+    border: 1px solid saddlebrown;
+    font-size: small;
+}
+
+main {
+    padding: 1px 20px 20px;
+    display: block;
+    background-color: #FFFFFF;
+    padding-left: 30px;
+    text-align: center;
+}
+
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", serif;
+    padding: 20px;
+}
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-width: 1px;
+    background-image: linear-gradient(to bottom, #FFFFFF, lightblue);
+    min-width: 960px;
+    max-width: 2048px;
+}
+
+.category {
+    padding: 20px;
+    border: 3px;
+    text-align: center;
+}
+
+#container > div {
+    color: #EFEFEF;
+    border: 3px solid;
+    background: #4ABDAC;
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 5px;
+    line-height: 45px;
+}
+
+/* DESKTOP DISPLAY CONFIGURATION */
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 130px;
+}
+
+/* TABLET DISPLAY CONFIGURATION */
+
+@media only screen and (max-width: 64em) {
+
+    body {
+        margin: 0;
+        background-color: #FFFFFF;
+    }
+
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+        border: none;
+    }
+
+    header {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0;
+        height: auto;
+    }
+
+    h1 {
+        letter-spacing: 0.1em;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    footer {
+        margin-left: 0;
+    }
+}
+
+/* SMARTPHONE DISPLAY CONFIGURATION */
+
+@media only screen and (max-width: 37.5em) {
+
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-right: 1em;
+        padding-left: 1em;
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    label {
+        float: none;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        margin-left: 0;
+        max-width: 37.5em;
+    }
+}
